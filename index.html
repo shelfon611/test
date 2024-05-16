@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+    .agree-button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 99;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 5px; /* 你可以根据需要调整为圆形或其他形状 */
+        cursor: pointer;
+        transition: all 0.3s ease; /* 添加过渡效果，使悬浮时更加平滑 */
+    }
+    
+    .agree-button:hover {
+        background-color: #0056b3; /* 鼠标悬停时改变背景颜色 */
+    }
+    .reject-button {
+        position: fixed;
+        bottom: 30px;
+        right: 150px;
+        z-index: 99;
+        background-color: #999999;
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 5px; /* 你可以根据需要调整为圆形或其他形状 */
+        cursor: pointer;
+        transition: all 0.3s ease; /* 添加过渡效果，使悬浮时更加平滑 */
+    }
+    
+    .reject-button:hover {
+        background-color: #666666; /* 鼠标悬停时改变背景颜色 */
+    }
+</style>
+<script>
+function onAgree(){
+privacy.agree();
+}
+function onReject(){
+privacy.reject();
+}
+</script>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p>Last updated: September 25, 2023</p>
+<p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+<p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
+<h2>Interpretation and Definitions</h2>
+<h3>Interpretation</h3>
+<p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+<h3>Definitions</h3>
+</ul>
+<button class="agree-button" onclick="onAgree()">I agree.</button>
+<button class="reject-button" onclick="onReject()">Reject.</button>
+</body>
+</html>
